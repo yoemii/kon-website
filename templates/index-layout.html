@@ -1,0 +1,41 @@
+<!--PLANTILLA [PARA TODOS LOS ARCHIVOS HTML]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--HOJA DE ESTILOS CSS [layout.html]-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index-layout.css') }}">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="nav-bar">
+            <h1 id="logo">LOGO</h1>
+            <ul id="btnList">
+                <button id="nav-btn">INICIO</button>
+                <button id="nav-btn">CONTACTO</button>
+            </ul>
+        </nav>
+
+        <div class="banner">
+        </div>
+        
+    </header>
+
+    {% block contenido %}
+
+    {% endblock %}
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
